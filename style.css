@@ -1,0 +1,118 @@
+
+
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0, 100%, 63%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --pale-blue: hsl(207, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    width: 100vw;
+    font-family: "Open Sans", sans-serif;
+}
+
+main {
+    display: block;
+    padding: 20px;
+}
+
+nav {
+    width: 100vw;
+    height: 90px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.logo--container {
+    grid-column: 1 / 2;
+    justify-content: center;
+}
+
+.logo--container img {
+    width: 120px;
+
+}
+
+
+.button--container {
+    grid-column: 3 / 4;
+    justify-content: center;
+}
+
+.button--container button {
+    width: 100px;
+    height: 27px;
+    background-color: var(--pale-blue);
+    border: 1px solid var(--pink);
+    color: var(--pink);
+    border-radius: 25px;
+    font-size: 0.7rem;
+    box-shadow: 1px 0.5px 6px var(--pink);
+    opacity: 75%;
+}
+
+.image--container {
+    width: 100vw;
+}
+
+.main-image {
+    width: 80vw;
+}
+
+.image {
+    width: 60vw;
+}
+
+main h1 {
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--dark-cyan);
+    margin: 15px;
+
+}
+
+.title--container p {
+    
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--dark-cyan);
+    line-height: 1.2rem;
+    margin: 15px;
+}
+
+.title--container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title--container button {
+    width: 180px;
+    height: 27px;
+    background-color: var(--pink);
+    color: var(--pale-blue);
+    border-style: none;
+    border-radius: 25px;
+    font-size: 0.7rem;
+    box-shadow: 1px 0.5px 6px var(--pink);
+    font-family: "Open Sans";
+    font-weight: 600;
+    margin: 15px auto;
+    justify-self: center;
+}
+
+button:hover {
+    background-color: var(--light-pink);
+}
